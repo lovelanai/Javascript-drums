@@ -12,14 +12,52 @@ body{
     justify-content: center;
 }
 
+#startscreen{
+    height: 50rem;
+    width: 70rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+
+
+}
+
+
+#startbtn{
+    font-size: 8rem;
+    text-align: center;
+height: 20rem;
+width: 50rem;
+color: white;
+background-color: crimson;
+border-radius: 1rem;
+}
+
 #drumcontainer{
+    display: none;
     position: relative;
     height: 50rem;
     width: 70rem;
     background-image: url(./assets/img/background2.jpg);
     background-size: contain;
     overflow: hidden;
+ 
 }
+
+.drumcontainer{
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
 
 #kick{
     position: absolute;
@@ -167,3 +205,5 @@ body{
       --angle: 60deg;
     }
   }
+
+

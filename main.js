@@ -2,7 +2,23 @@ window.addEventListener('load', main);
 window.addEventListener('keydown', checkKeyPress, false);
 function main(){
     canvas();
-    rocktrack.play();
+
+    addEventListeners();
+
+}
+
+function addEventListeners(){
+    document.getElementById('startbtn').addEventListener('click', startconcert);
+}
+
+function startconcert(){
+
+document.getElementById('startscreen').classList.add('startscreenfade')
+document.getElementById('startscreen').style.display = 'none';
+document.getElementById('drumcontainer').classList.add('drumcontainer')
+document.getElementById('drumcontainer').style.display = 'unset';
+rocktrack.play();
+
 }
 
 let rocktrack = new Audio();
