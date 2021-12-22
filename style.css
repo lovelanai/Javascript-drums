@@ -1,0 +1,23 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.background{
+    background-color: cornflowerblue;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#drumcontainer{
+    height: 80%;
+    width: 80%;
+    background-color: white;
+
+
+
+
+}
