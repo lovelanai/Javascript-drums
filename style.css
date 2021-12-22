@@ -5,7 +5,7 @@ body{
 }
 
 .background{
-    background-color: cornflowerblue;
+    background-color: #F3F0E8;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -16,12 +16,14 @@ body{
     position: relative;
     height: 50rem;
     width: 70rem;
-    background-color: white;
+    background-image: url(./assets/img/background2.jpg);
+    background-size: contain;
+    overflow: hidden;
 }
 
 #kick{
     position: absolute;
-    bottom: 7rem;
+    bottom: 10rem;
     left: 26rem;
     z-index: 1;
     
@@ -30,20 +32,21 @@ body{
 
 #crash{
     position: absolute;
-    top: 3rem;
+    top: 0;
     z-index: 1;
     left: 10rem;
 }
 
 #hihat{
     position: absolute;
-    top: 3rem;
+    top: 0;
     right: 10rem;
+ 
 }
 
 #snare{
     position: absolute;
-    bottom: 2rem;
+    bottom: 5rem;
     left: 40rem;
 
 }
@@ -51,7 +54,7 @@ body{
 
 #tom1{
     position: absolute;
-    bottom: 20rem;
+    bottom: 23rem;
     left: 33rem;
     z-index: 0;
 }
@@ -59,7 +62,7 @@ body{
 
 #tom2{
     position: absolute;
-    bottom: 20.5rem;
+    bottom: 23.5rem;
     left: 22.6rem;
     z-index: 0;
 
@@ -76,3 +79,91 @@ body{
         
       
 }
+
+
+.hihat-btn{
+    transform: translateY(4px);
+    filter: drop-shadow(0 0 0.75rem rgb(220, 220, 20)); 
+}
+
+
+.snare-btn{
+    transform: translateY(4px);
+    filter: drop-shadow(0 0 0.75rem rgb(20, 133, 220)); 
+}
+
+.crash-btn{
+    transform: translateY(4px);
+    filter: drop-shadow(0 0 0.75rem rgb(20, 220, 133));   
+}
+
+
+
+.croud{
+    position: absolute;
+    bottom: -14rem;
+
+    height: 54rem;
+    z-index: 10;
+    animation: bounce .8s infinite;
+}
+
+ @keyframes bounce{
+
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-4.5rem);
+    }  
+
+    100% {
+        transform: translateY(0);
+    }  
+
+} 
+
+
+
+
+
+/* disco-ljus */
+
+.ray {
+    clip-path:polygon(0% 45%, 100% 0%, 100% 100%, 0% 55%);
+    transition: 4s;
+  transform: translateY(-50%) translateX(-50%) rotate(var(--angle)) translateY(50%) translateX(50%) translateY(-50%); 
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    width: 500px;
+    height: 100px;
+    background: linear-gradient(0.25turn,rgba(0, 42, 255, 0.7), rgba(255,255,100,0));
+  }
+  
+  
+  .light1 {
+    animation-duration: 10s;
+    animation-name: wave;
+    animation-iteration-count: infinite;
+  }
+  
+  .light2 {
+    animation-duration: 7s;
+    animation-name: wave;
+    animation-iteration-count: infinite;
+  }
+  
+  
+  @keyframes wave {
+    0% {
+      --angle: 90deg;
+    }
+    
+    50% {
+      --angle: 110deg;
+    }
+    100% {
+      --angle: 60deg;
+    }
+  }

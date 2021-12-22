@@ -20,10 +20,18 @@ function kick() {
 
     ctx.beginPath();
     ctx.arc(150, 150, 140, 0, 2 * Math.PI);
-    ctx.fillStyle = '#f0f0f0';
+    ctx.fillStyle = '#013365';
     ctx.lineWidth = 4;
     ctx.fill();
-    ctx.strokeStyle = 'orange'
+    ctx.strokeStyle = 'crimson'
+    ctx.stroke();
+
+    ctx.beginPath();
+    ctx.arc(150, 150, 120, 0, 2 * Math.PI);
+    ctx.fillStyle = 'rgba(0, 0, 0, 0.554)';
+    ctx.lineWidth = 4;
+    ctx.fill();
+    ctx.strokeStyle = 'crimson'
     ctx.stroke();
 
 }
@@ -37,7 +45,7 @@ function crash(){
     ctx.arc(150, 600, 1, 1, 1);
     ctx.lineTo(150, 319);
     ctx.lineWidth = 5;
-    ctx.strokeStyle = 'silver';
+    ctx.strokeStyle = 'black';
     ctx.stroke();
 
     // Crash-stand left-leg
@@ -45,7 +53,7 @@ function crash(){
     ctx.arc(110, 600, 1, 1, 1);
     ctx.lineTo(150, 450);
     ctx.lineWidth = 5;
-    ctx.strokeStyle = 'silver';
+    ctx.strokeStyle = 'black';
     ctx.stroke();
 
     // Crash-stand right-leg
@@ -53,7 +61,7 @@ function crash(){
     ctx.arc(150, 450, 1, 1, 1);
     ctx.lineTo(200, 600);
     ctx.lineWidth = 5;
-    ctx.strokeStyle = 'silver';
+    ctx.strokeStyle = 'black';
     ctx.stroke();
 
         // Crash tilt
@@ -61,7 +69,7 @@ function crash(){
         ctx.arc(180, 280, 1, 1, 1);
         ctx.lineTo(150, 320);
         ctx.lineWidth = 4;
-        ctx.strokeStyle = 'silver';
+        ctx.strokeStyle = 'black';
         ctx.stroke();
 
 
@@ -101,7 +109,7 @@ function cymbal(){
      ctx.arc(150, 620, 1, 1, 1);
      ctx.lineTo(150, 260);
      ctx.lineWidth = 4;
-     ctx.strokeStyle = 'silver';
+     ctx.strokeStyle = 'black';
      ctx.stroke();
  
      // hihat-stand left-leg
@@ -109,7 +117,7 @@ function cymbal(){
      ctx.arc(110, 600, 1, 1, 1);
      ctx.lineTo(150, 450);
      ctx.lineWidth = 6;
-     ctx.strokeStyle = 'silver';
+     ctx.strokeStyle = 'black';
      ctx.stroke();
  
      // hihat-stand right-leg
@@ -117,7 +125,7 @@ function cymbal(){
      ctx.arc(150, 450, 1, 1, 1);
      ctx.lineTo(200, 600);
      ctx.lineWidth = 5;
-     ctx.strokeStyle = 'silver';
+     ctx.strokeStyle = 'black';
      ctx.stroke();
  
  
@@ -158,7 +166,7 @@ function cymbal(){
           ctx.arc(15, 304.5, 8, 0, Math.PI, false);
           ctx.closePath();
           ctx.fill();
-          ctx.fillStyle = 'gold';
+          ctx.fillStyle = 'black';
           ctx.lineWidth = 2;
           ctx.stroke();
 }
@@ -173,10 +181,10 @@ ctx.rotate(-10 * Math.PI / 180);
 ctx.rect(-20, 215, 170, 70,);
 
 
-ctx.fillStyle = 'red';
+ctx.fillStyle = '#013365';
 ctx.lineWidth = 4;
 ctx.fill();
-ctx.strokeStyle = 'orange'
+ctx.strokeStyle = 'crimson'
 ctx.stroke();
 
  // snare-stand
@@ -184,7 +192,7 @@ ctx.stroke();
  ctx.arc(50, 500, 1, 1, 1);
  ctx.lineTo(70, 287);
  ctx.lineWidth = 4;
- ctx.strokeStyle = 'silver';
+ ctx.strokeStyle = 'black';
  ctx.stroke();
 
  // snare-stand right-leg
@@ -192,7 +200,7 @@ ctx.stroke();
  ctx.arc(100, 510, 1, 1, 1);
  ctx.lineTo(60, 400);
  ctx.lineWidth = 5;
- ctx.strokeStyle = 'silver';
+ ctx.strokeStyle = 'black';
  ctx.stroke();
 
  // snare-stand left-leg
@@ -200,7 +208,7 @@ ctx.stroke();
  ctx.arc(-10, 500, 1, 1, 1);
  ctx.lineTo(60, 400);
  ctx.lineWidth = 5;
- ctx.strokeStyle = 'silver';
+ ctx.strokeStyle = 'black';
  ctx.stroke();
 
 
@@ -214,10 +222,10 @@ function tom1(){
     ctx.rect(20, 215, 170, 70,);
     
     
-    ctx.fillStyle = 'red';
+    ctx.fillStyle = '#013365';
     ctx.lineWidth = 4;
     ctx.fill();
-    ctx.strokeStyle = 'orange'
+    ctx.strokeStyle = 'crimson'
     ctx.stroke();
     }
 
@@ -230,9 +238,9 @@ function tom1(){
         ctx.rect(20, 215, 170, 70,);
         
         
-        ctx.fillStyle = 'red';
+        ctx.fillStyle = '#013365';
         ctx.lineWidth = 4;
         ctx.fill();
-        ctx.strokeStyle = 'orange'
+        ctx.strokeStyle = 'crimson'
         ctx.stroke();
         }
