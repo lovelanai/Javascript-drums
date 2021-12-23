@@ -15,8 +15,18 @@
 
     <div class="background">
         <div id="startscreen">
-        <button id="startbtn">START SHOW</button>
-    </div>
+            <p style="color: whitesmoke; position: absolute; top: 4rem; font-size: 5rem;">CHOSE SONG</p>
+            <div id="chosesong">
+            <button class="songs" id="nirvana">NIRVANA <HR><span>SMELLS LIKE TEEN SPIRIT</span></HR></button>
+            <button class="songs" id="acdc">ACDC <HR><span>HIGHWAY TO HELL</span></HR></button>
+            <button class="songs" id="gunsnroses">GUNS & ROSES <HR><span>PARADISE CITY</span></HR></button>
+            </div>
+            <div id="chosetype" >
+                <button class="songs" id="withoutdrums" >WITHOUT DRUMS<HR><span>PLAY SONG WITHOUT BACKING DRUMS</span></HR></button>
+                <button class="songs" id="withdrums">WITH DRUMS<HR><span>PLAY SONG WITH BACKING DRUMS</span></HR></button>
+            </div>
+        </div>
+        </div>
 
         <div id="drumcontainer">
 
@@ -25,30 +35,46 @@
 
             <div class="light1">
                 <div style="left: 20%" class="ray"></div>
-                <div class="light2"> 
+                <div class="light2">
                     <div style="left: 80%" class="ray"></div>
-            <img class="croud" src="./assets/img/crowd.png" alt="">
-        
-            <div>
-           
-            <canvas id="snare" width="300" height="600"></canvas>
-            <img id="s-button" style="position: absolute; bottom: 26rem; height: 4rem; right: 21rem; z-index: 1;" src="./assets/img/s.png" alt="">
+                    <img class="crowd" src="./assets/img/crowd.png" alt="">
 
-            <canvas id="kick" width="300" height="300"></canvas>
-            <img id="a-button" style="position: absolute; bottom: 16rem; height: 7rem; left: 32rem; z-index: 1;" src="./assets/img/a.png" alt="">
-            <canvas id="crash" width="350" height="730"></canvas>
-            <img id="o-button" style="    position: absolute; bottom: 34rem; height: 4rem; left: 16rem; z-index: 1;" src="./assets/img/o.png" alt="">
-            <canvas id="hihat" width="250" height="730"></canvas>
-            <img id="k-button" style="position: absolute; bottom: 32rem; height: 4rem; right: 12rem; z-index: 1;" src="./assets/img/k.png" alt="">
-            <img id="l-button" style="position: absolute; bottom: 32rem; height: 4rem; right: 8rem; z-index: 1;" src="./assets/img/l.png" alt="">
-            <canvas id="tom1" width="250" height="300"></canvas>
-            <canvas id="tom2" width="250" height="300"></canvas>
-        </div>
+                    <div>
+
+                        <canvas id="snare" width="300" height="600"></canvas>
+                        <img id="s-button"
+                            style="position: absolute; bottom: 26rem; height: 4rem; right: 21rem; z-index: 1;"
+                            src="./assets/img/s.png" alt="">
+
+                        <canvas id="kick" width="300" height="300"></canvas>
+                        <img id="a-button"
+                            style="position: absolute; bottom: 16rem; height: 7rem; left: 32rem; z-index: 1;"
+                            src="./assets/img/a.png" alt="">
+                        <canvas id="crash" width="350" height="730"></canvas>
+                        <img id="l-button"
+                            style="    position: absolute; bottom: 34rem; height: 4rem; left: 16rem; z-index: 1;"
+                            src="./assets/img/l.png" alt="">
+                        <canvas id="hihat" width="250" height="730"></canvas>
+                        <img id="j-button"
+                            style="position: absolute; bottom: 32rem; height: 4rem; right: 12rem; z-index: 1;"
+                            src="./assets/img/j.png" alt="">
+                        <img id="k-button"
+                            style="position: absolute; bottom: 32rem; height: 4rem; right: 8rem; z-index: 1;"
+                            src="./assets/img/k.png" alt="">
+                        <canvas id="tom1" width="250" height="300"></canvas>
+                        <img id="d-button"
+                            style="position: absolute; bottom: 25rem; height: 4rem; right: 28rem; z-index: 1;"
+                            src="./assets/img/d.png" alt="">
+                        <canvas id="tom2" width="250" height="300"></canvas>
+                        <img id="f-button"
+                            style="position: absolute; bottom: 25rem; height: 4rem; right: 38.5rem; z-index: 1;"
+                            src="./assets/img/f.png" alt="">
+                    </div>
 
 
-          
-        </div>
-    </div>
+
+                </div>
+            </div>
 
         </div>
 

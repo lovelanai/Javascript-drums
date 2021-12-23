@@ -25,14 +25,24 @@ body{
 }
 
 
-#startbtn{
-    font-size: 8rem;
+.songs{
+    font-size: 2rem;
+    padding: 0 1rem;
+    margin: 1rem;
     text-align: center;
-height: 20rem;
-width: 50rem;
+height: 15rem;
+width: 20rem;
 color: white;
 background-color: crimson;
 border-radius: 1rem;
+}
+
+.songs span{
+    font-size: 1rem;
+}
+
+#chosetype{
+    display: none;
 }
 
 #drumcontainer{
@@ -135,9 +145,19 @@ border-radius: 1rem;
     filter: drop-shadow(0 0 0.75rem rgb(20, 220, 133));   
 }
 
+.hightom-btn{
+    transform: translateY(4px);
+    filter: drop-shadow(0 0 0.75rem rgb(220, 130, 20));   
+}
+
+.lowtom-btn{
+    transform: translateY(4px);
+    filter: drop-shadow(0 0 0.75rem rgb(103, 220, 20));   
+}
 
 
-.croud{
+
+.crowd{
     position: absolute;
     bottom: -14rem;
 
