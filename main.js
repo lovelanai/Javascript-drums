@@ -1,68 +1,72 @@
 window.addEventListener('load', main);
 window.addEventListener('keydown', checkKeyPress, false);
+
+/** Kör canvas & eventlyssnare Onload */
 function main(){
     canvas();
-
     addEventListeners();
 
 }
 
+
+/** Eventlyssnare */
 function addEventListeners(){
     document.getElementById('nirvana').addEventListener('click', nirvana);
+    document.getElementById('acdc').addEventListener('click', acdc);
 
 }
 
+
+
+
+
+/** Om nirvana väljs, kör denna */
 function nirvana(){
 document.getElementById('chosesong').style.display = 'none';
 document.getElementById('chosetype').style.display = 'flex';
 
+// Ge button "withoutdrums" nytt id ("nirvananodrums") 
 let nodrums = document.getElementById('withoutdrums');
 nodrums.setAttribute("id", "nirvananodrums");
+
+// Kör funktionen nirvanaNoDrums
 document.getElementById('nirvananodrums').addEventListener('click', nirvanaNoDrums)
 
-
+// Ge button "withdrums" nytt id ("nirvanawithdrums") 
 let withDrums = document.getElementById('withdrums');
 withDrums.setAttribute("id", "nirvanawithdrums");
+// Kör funktionen nirvanaWithDrums
 document.getElementById('nirvanawithdrums').addEventListener('click', nirvanaWithDrums)
 }
 
-
+/** (NIRVANA) Startar vald låt utan trummor och visar scenen */
 function nirvanaNoDrums(){
     nirvananodrums.play();
-    console.log('utan trummor')
+
+    document.getElementById('startscreen').classList.add('startscreenfade')
+    document.getElementById('startscreen').style.display = 'none';
+    document.getElementById('drumcontainer').classList.add('drumcontainer')
+    document.getElementById('drumcontainer').style.display = 'unset';
 }
 
+/** (NIRVANA) Startar vald låt utan trummor och visar scenen */
 function nirvanaWithDrums(){
     nirvanawithdrums.play();
-    console.log('med trummor')
+
+    document.getElementById('startscreen').classList.add('startscreenfade')
+    document.getElementById('startscreen').style.display = 'none';
+    document.getElementById('drumcontainer').classList.add('drumcontainer')
+    document.getElementById('drumcontainer').style.display = 'unset';
 }
 
-//songs
-let nirvananodrums = new Audio();
-nirvananodrums.src="./assets/nodrumsnirvana.mp3";
-
-let nirvanawithdrums = new Audio();
-nirvanawithdrums.src="./assets/nirvana.mp3";
 
 
 
-let kicksample = new Audio();
-kicksample.src="./assets/kick.mp3";
 
-let snaresample = new Audio();
-snaresample.src="./assets/snare.wav";
 
-let hihatsample = new Audio();
-hihatsample.src="./assets/hihat.wav";
 
-let crashsample = new Audio();
-crashsample.src="./assets/crash.wav";
 
-let hightom = new Audio();
-hightom.src="./assets/hightom.wav";
 
-let lowtom = new Audio();
-lowtom.src="./assets/lowtom.wav";
 
 
 
@@ -167,3 +171,32 @@ document.addEventListener("keyup", function(key, keyCode){
 
 
 })
+
+
+
+
+
+//songs
+let nirvananodrums = new Audio();
+nirvananodrums.src="./assets/nodrumsnirvana.mp3";
+
+let nirvanawithdrums = new Audio();
+nirvanawithdrums.src="./assets/nirvana.mp3";
+
+let kicksample = new Audio();
+kicksample.src="./assets/kick.mp3";
+
+let snaresample = new Audio();
+snaresample.src="./assets/snare.wav";
+
+let hihatsample = new Audio();
+hihatsample.src="./assets/hihat.wav";
+
+let crashsample = new Audio();
+crashsample.src="./assets/crash.wav";
+
+let hightom = new Audio();
+hightom.src="./assets/hightom.wav";
+
+let lowtom = new Audio();
+lowtom.src="./assets/lowtom.wav";
